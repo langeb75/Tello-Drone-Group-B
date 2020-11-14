@@ -45,21 +45,22 @@ recvThread.start()
 
 # Drones mission through the first Hula Hoop
 def firstHoop():
-
+    sendmsg('up 65 ')
+    sendmsg('forward 190')
     
 
 # Drones mission through the second Hula Hoop
-def secondHoop():
+# def secondHoop():
 
 
 
 # Drones mission through the third Hula Hoop with a yaw
-def thirdHoopYaw():
+# def thirdHoopYaw():
 
 
 
 # Drones mission through the fourth Hula Hoop
-def fourthHoop():
+# def fourthHoop():
 
 
 
