@@ -55,7 +55,10 @@ def secondHoop():
 
 
 # Drones mission through the third Hula Hoop with a yaw
-# def thirdHoopYaw():
+def thirdHoop():
+    sendmsg('curve 100 100 0 30 250 0 60')
+    time.sleep(3)
+    sendmsg('ccw 180')
 
 
 
@@ -84,6 +87,8 @@ try:
         firstHoop()
 
         secondHoop()
+
+        thirdHoop()
 
         sendmsg('land')
 
