@@ -47,24 +47,20 @@ recvThread.start()
 def firstHoop():
     sendmsg('up 50', 7)
     sendmsg('forward 190')
-    
 
-# Drones mission through the second Hula Hoopdef secondHoop():
+# Drones mission through the second Hula Hoop using the Go command
 def secondHoop():
     sendmsg('go 170 0 40 65')
 
-
-# Drones mission through the third Hula Hoop with a yaw
+# Drones mission through the third Hula Hoop using the Curve command
 def thirdHoop():
     sendmsg('curve 100 100 0 30 250 0 60')
     time.sleep(3)
     sendmsg('ccw 180')
 
-
-
-
-# Drones mission through the fourth Hula Hoop
-# def fourthHoop():
+# Drones mission through the fourth Hula Hoop using the Go command
+def fourthHoop():
+    sendmsg('go -250 0 -60 75')
 
 
 
@@ -89,6 +85,8 @@ try:
         secondHoop()
 
         thirdHoop()
+
+        fourthHoop()
 
         sendmsg('land')
 
